@@ -299,7 +299,6 @@
         <item>Yonkers</item>
 
     </string-array>
-    <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="accessibility_overflow">Accessibity</string>
     <string name="saving_image">Saving image</string>
