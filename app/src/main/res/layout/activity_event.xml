@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_toolbar_event_refresh" android:id="@+id/toolbar"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvEvent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/llEventsStatus"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_bg">
+    </android.support.v7.widget.RecyclerView>
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:id="@+id/txtNoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/appGray"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llEventsStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true">
+
+
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:id="@+id/txtLive"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/txtborder"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Today"
+            android:textSize="12sp" />
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:id="@+id/txtFuture"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/txtborder"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Future"
+            android:textSize="12sp" />
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:id="@+id/txtPast"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/txtborder"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="Past"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlPlayer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+
+        <in.mvcdemo.Custom.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_profile_50"
+            android:id="@+id/img_user"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+           />
+
+
+
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="20sp"
+            android:id="@+id/txtPlayername"
+            android:layout_toRightOf="@+id/img_user"
+            android:textColor="@android:color/white"/>
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teamname"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/txtTeamName"
+            android:layout_below="@+id/txtPlayername"
+            android:layout_toRightOf="@+id/img_user"
+            android:textColor="@color/appGray"
+            />
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTeamName"
+            android:layout_toRightOf="@+id/img_user"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/txtShirtno"
+            android:textColor="@color/appGray"
+            android:text="Shirt No:"/>
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/txtJersyNo"
+            android:layout_below="@+id/txtTeamName"
+            android:layout_toRightOf="@+id/txtShirtno"
+            android:textColor="@color/appGray"
+            />
+
+
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPlayerInfo"
+            android:text="View Info"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:background="@drawable/rounded_pla_info_brn"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

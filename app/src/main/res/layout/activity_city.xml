@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg">
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelectCity"
+        android:layout_marginLeft="16dp"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:text="Select City"/>
+
+    <in.mvcdemo.Custom.SearchableSpinner
+        android:id="@+id/spCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/city"
+        android:layout_below="@+id/txtSelectCity"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        app:hintText="@string/select_city"
+        app:hintTextColor="@color/appGray"
+        android:background="@drawable/rounded_corner"
+        />
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgNext"
+        android:text="NEXT"
+        android:background="@drawable/rounded_accent_btn"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/spCity"
+        android:layout_margin="16dp"
+        />
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtNeedHelp"
+        android:layout_height="wrap_content"
+        android:text="Need help ?"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/spCity"
+        />
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtPrivacyPolicy"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

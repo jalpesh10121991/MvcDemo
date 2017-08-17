@@ -1,0 +1,374 @@
+<resources>
+    <string name="app_name">MVC DEMO</string>
+    <string name="title">MVC DEMO</string>
+
+    <string-array name="city">
+        <item>Abilene</item>
+        <item>Akron</item>
+        <item>Albuquerque</item>
+        <item>Alexandria</item>
+        <item>Allentown</item>
+        <item>Amarillo</item>
+        <item>Anaheim</item>
+        <item>Anchorage</item>
+        <item>Ann Arbor</item>
+        <item>Antioch</item>
+        <item>Arlington</item>
+        <item>Arvada</item>
+        <item>Athens</item>
+        <item>Atlanta</item>
+        <item>Augusta</item>
+        <item>Aurora</item>
+        <item>Aurora</item>
+        <item>Austin</item>
+        <item>Bakersfield</item>
+        <item>Baltimore</item>
+        <item>Baton Rouge</item>
+        <item>Beaumont</item>
+        <item>Bellevue</item>
+        <item>Berkeley</item>
+        <item>Billings</item>
+        <item>Birmingham</item>
+        <item>Boise</item>
+        <item>Boston</item>
+        <item>Boulder</item>
+        <item>Bridgeport</item>
+        <item>Broken Arrow</item>
+        <item>Brownsville</item>
+        <item>Buffalo</item>
+        <item>Burbank</item>
+        <item>Cambridge</item>
+        <item>Cape Coral</item>
+        <item>Carlsbad</item>
+        <item>Carrollton</item>
+        <item>Cary</item>
+        <item>Cedar Rapids</item>
+        <item>Centennial</item>
+        <item>Chandler</item>
+        <item>Charleston</item>
+        <item>Charlotte</item>
+        <item>Chattanooga</item>
+        <item>Chesapeake</item>
+        <item>Chicago</item>
+        <item>Chula Vista</item>
+        <item>Cincinnati</item>
+        <item>Clarksville</item>
+        <item>Clearwater</item>
+        <item>Cleveland</item>
+        <item>Clovis</item>
+        <item>College Station</item>
+        <item>Colorado Springs</item>
+        <item>Columbus</item>
+        <item>Concord</item>
+        <item>Coral Springs</item>
+        <item>Corona</item>
+        <item>Corpus Christi</item>
+        <item>Costa Mesa</item>
+        <item>Dallas</item>
+        <item>Daly City</item>
+        <item>Davenport</item>
+        <item>Davie</item>
+        <item>Dayton</item>
+        <item>Denton</item>
+        <item>Denver</item>
+        <item>Des Moines</item>
+        <item>Detroit</item>
+        <item>Downey</item>
+        <item>Durham</item>
+        <item>Edison</item>
+        <item>El Cajon</item>
+        <item>El Monte</item>
+        <item>El Paso</item>
+        <item>Elgin</item>
+        <item>Elizabeth</item>
+        <item>Elk Grove</item>
+        <item>Escondido</item>
+        <item>Eugene</item>
+        <item>Evansville</item>
+        <item>Everett</item>
+        <item>Fairfield</item>
+        <item>Fargo</item>
+        <item>Fayetteville</item>
+        <item>Fontana</item>
+        <item>Fort Collins</item>
+        <item>Fort Lauderdale</item>
+        <item>Fort Wayne</item>
+        <item>Fort Worth</item>
+        <item>Fremont</item>
+        <item>Fresno</item>
+        <item>Frisco</item>
+        <item>Fullerton</item>
+        <item>Gainesville</item>
+        <item>Garden Grove</item>
+        <item>Garland</item>
+        <item>Gilbert</item>
+        <item>Glendale</item>
+        <item>Grand Prairie</item>
+        <item>Grand Rapids</item>
+        <item>Greeley</item>
+        <item>Green Bay</item>
+        <item>Greensboro</item>
+        <item>Gresham</item>
+        <item>Hampton</item>
+        <item>Hartford</item>
+        <item>Hayward</item>
+        <item>Henderson</item>
+        <item>Hialeah</item>
+        <item>High Point</item>
+        <item>Hillsboro</item>
+        <item>Hollywood</item>
+        <item>Honolulu</item>
+        <item>Houston</item>
+        <item>Huntington Beach</item>
+        <item>Huntsville</item>
+        <item>Independence</item>
+        <item>Indianapolis</item>
+        <item>Inglewood</item>
+        <item>Irvine</item>
+        <item>Irving</item>
+        <item>Jackson</item>
+        <item>Jacksonville</item>
+        <item>Jersey City</item>
+        <item>Joliet</item>
+        <item>Jurupa Valley</item>
+        <item>Kansas City</item>
+        <item>Kansas City</item>
+        <item>Kent</item>
+        <item>Killeen</item>
+        <item>Knoxville</item>
+        <item>Lafayette</item>
+        <item>Lakeland</item>
+        <item>Lakewood</item>
+        <item>Lancaster</item>
+        <item>Lansing</item>
+        <item>Laredo</item>
+        <item>Las Cruces</item>
+        <item>Las Vegas</item>
+        <item>Lewisville</item>
+        <item>Lexington</item>
+        <item>Lincoln</item>
+        <item>Little Rock</item>
+        <item>Long Beach</item>
+        <item>Los Angeles</item>
+        <item>Louisville</item>
+        <item>Lowell</item>
+        <item>Lubbock</item>
+        <item>Macon</item>
+        <item>Madison</item>
+        <item>Manchester</item>
+        <item>McAllen</item>
+        <item>McKinney</item>
+        <item>Memphis</item>
+        <item>Mesa</item>
+        <item>Mesquite</item>
+        <item>Miami</item>
+        <item>Miami Gardens</item>
+        <item>Midland</item>
+        <item>Milwaukee</item>
+        <item>Minneapolis</item>
+        <item>Miramar</item>
+        <item>Mobile</item>
+        <item>Modesto</item>
+        <item>Montgomery</item>
+        <item>Moreno Valley</item>
+        <item>Murfreesboro</item>
+        <item>Murrieta</item>
+        <item>Naperville</item>
+        <item>Nashville</item>
+        <item>New Haven</item>
+        <item>New Orleans</item>
+        <item>New York</item>
+        <item>Newark</item>
+        <item>Newport News</item>
+        <item>Norfolk</item>
+        <item>Norman</item>
+        <item>North Charleston</item>
+        <item>North Las Vegas</item>
+        <item>Norwalk</item>
+        <item>Oakland</item>
+        <item>Oceanside</item>
+        <item>Odessa</item>
+        <item>Oklahoma City</item>
+        <item>Olathe</item>
+        <item>Omaha</item>
+        <item>Ontario</item>
+        <item>Orange</item>
+        <item>Orlando</item>
+        <item>Overland Park</item>
+        <item>Oxnard</item>
+        <item>Palm Bay</item>
+        <item>Palmdale</item>
+        <item>Pasadena</item>
+        <item>Paterson</item>
+        <item>Pearland</item>
+        <item>Pembroke Pines</item>
+        <item>Peoria</item>
+        <item>Philadelphia</item>
+        <item>Phoenix</item>
+        <item>Pittsburgh</item>
+        <item>Plano</item>
+        <item>Pomona</item>
+        <item>Pompano Beach</item>
+        <item>Port St. Lucie</item>
+        <item>Portland</item>
+        <item>Providence</item>
+        <item>Provo</item>
+        <item>Pueblo</item>
+        <item>Raleigh</item>
+        <item>Rancho Cucamonga</item>
+        <item>Reno</item>
+        <item>Renton</item>
+        <item>Rialto</item>
+        <item>Richardson</item>
+        <item>Richmond</item>
+        <item>Riverside</item>
+        <item>Rochester</item>
+        <item>Rockford</item>
+        <item>Roseville</item>
+        <item>Round Rock</item>
+        <item>Sacramento</item>
+        <item>Saint Paul</item>
+        <item>Salem</item>
+        <item>Salinas</item>
+        <item>Salt Lake City</item>
+        <item>San Angelo</item>
+        <item>San Antonio</item>
+        <item>San Bernardino</item>
+        <item>San Diego</item>
+        <item>San Francisco</item>
+        <item>San Jose</item>
+        <item>San Mateo</item>
+        <item>Sandy Springs</item>
+        <item>Santa Ana</item>
+        <item>Santa Clara</item>
+        <item>Santa Clarita</item>
+        <item>Santa Maria</item>
+        <item>Santa Rosa</item>
+        <item>Savannah</item>
+        <item>Scottsdale</item>
+        <item>Seattle</item>
+        <item>Shreveport</item>
+        <item>Simi Valley</item>
+        <item>Sioux Falls</item>
+        <item>South Bend</item>
+        <item>Spokane</item>
+        <item>Springfield</item>
+        <item>St. Louis</item>
+        <item>St. Petersburg</item>
+        <item>Stamford</item>
+        <item>Sterling Heights</item>
+        <item>Stockton</item>
+        <item>Sunnyvale</item>
+        <item>Surprise</item>
+        <item>Syracuse</item>
+        <item>Tacoma</item>
+        <item>Tallahassee</item>
+        <item>Tampa</item>
+        <item>Temecula</item>
+        <item>Tempe</item>
+        <item>Thornton</item>
+        <item>Thousand Oaks</item>
+        <item>Toledo</item>
+        <item>Topeka</item>
+        <item>Torrance</item>
+        <item>Tucson</item>
+        <item>Tulsa</item>
+        <item>Tyler</item>
+        <item>Vallejo</item>
+        <item>Vancouver</item>
+        <item>Ventura</item>
+        <item>Victorville</item>
+        <item>Virginia Beach</item>
+        <item>Visalia</item>
+        <item>Vista</item>
+        <item>Waco</item>
+        <item>Warren</item>
+        <item>Washington</item>
+        <item>Waterbury</item>
+        <item>West Covina</item>
+        <item>West Jordan</item>
+        <item>West Palm Beach</item>
+        <item>West Valley City</item>
+        <item>Westminster</item>
+        <item>Wichita</item>
+        <item>Wichita Falls</item>
+        <item>Wilmington</item>
+        <item>Winston–Salem</item>
+        <item>Woodbridge</item>
+        <item>Worcester</item>
+        <item>Yonkers</item>
+
+    </string-array>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="accessibility_overflow">Accessibity</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="select_city">Select city from drop down</string>
+    <string name="title_activity_locate">Locate Event</string>
+    <string name="choose_team">Choose Team</string>
+
+
+    <string name="nav_open">Nav Open</string>
+    <string name="nav_close">Nav Close</string>
+    <string name="error">Enter minimum %1$s chars</string>
+    <string name="consent_one">I (print name) %1$s to tattoo me.
+I am over 18 years of age and the information given is accurate to the best of my knowledge.</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="sig__default_dialog_title">Please sign</string>
+    <string name="sig__default_dialog_action_confirm">Confirm</string>
+    <string name="sig__default_dialog_action_cancel">Cancel</string>
+
+    <string name="agreement">I agree the terms and conditions.</string>
+    <string name="clear_pad">Clear</string>
+    <string name="save_signature">Save</string>
+    <string name="compress_signature">Scale</string>
+
+    <string name="ok">OK</string>
+    <string name="contacts_string">Total number of contacts: %1$,d\nFirst contact:<b>%2$s</b></string>
+    <string name="contacts_none">No contacts stored on device.</string>
+    <string name="contacts_empty">Contacts not loaded.</string>
+    <string name="add_contact">Add a contact</string>
+    <string name="show_contact">Show first contact</string>
+    <string name="contacts_intro">This fragment demonstrates access to the contact database on the device.\n
+            Clicking \"Add a contact\" adds a new contact named "__DUMMY ENTRY" directly into the database.\n
+    Clicking \"Show first contact\" accesses the contact database to display the name of the first contact.</string>
+    <string name="camera_unavailable"><b>Camera could not be opened.</b>\nThis occurs when the camera is not available (for example it is already in use) or if the system has denied access (for example when camera access has been disabled).</string>
+    <string name="back">Back</string>
+    <string name="show_camera">Show camera preview</string>
+    <string name="show_contacts">Show and add contacts</string>
+    <string name="main_introduction">Click the buttons below to show a camera preview or access the contacts database.\nNote that the contacts option is only available on Android M to illustrate the use of optional, M-only permissions that are not requested on lower SDK platforms.</string>
+    <string name="permision_available_camera">Camera Permission has been granted. Preview can now be opened.</string>
+    <string name="permision_available_contacts">Contacts Permissions have been granted. Contacts screen can now be opened.</string>
+    <string name="permissions_not_granted">Permissions were not granted.</string>
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+    <string name="permission_contacts_rationale">Contacts permissions are needed to demonstrate access.</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSample</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+
+
+    <string name="msg_sorry">Sorry, but we need permission to continue!</string>
+    <string name="msg_no_camera">I cannot find a camera app!</string>
+    <string name="msg_no_viewer">I cannot find an image viewer app that supports a content: Uri</string>
+</resources>

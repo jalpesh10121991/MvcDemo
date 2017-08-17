@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/app_bg"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_toolbar" android:id="@+id/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInsturction"
+        android:maxLines="100"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:padding="16dp"/>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

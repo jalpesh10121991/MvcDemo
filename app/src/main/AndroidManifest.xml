@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.mvcdemo">
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.gems.photopass.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="com.gems.photopass.permission.MAPS_RECEIVE" />
+
+    <application
+        android:name="in.mvcdemo.Utills.VApp"
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="in.mvcdemo.Activity.ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.mvcdemo.Activity.ActivityEvent_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.mvcdemo.Activity.ActivityAddPlayerProfile_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.mvcdemo.Activity.ActivityCity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.mvcdemo.Activity.ActivityPlayer_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.mvcdemo.Activity.ActivityLanding_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.mvcdemo.Activity.ActivityPlayerProfile_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="in.mvcdemo.Custom.cropimage.CropImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="in.mvcdemo.Activity.InstructionActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name="in.mvcdemo.Activity.PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="in.mvcdemo.Activity.LocateActivity"
+            android:label="@string/title_activity_locate"></activity>
+
+        <activity android:name="in.mvcdemo.Activity.EditProfile_"
+            android:label="Edit Profile"
+            android:screenOrientation="portrait"/>
+        <activity android:name="in.mvcdemo.Activity.ActivityEventScore_"
+            android:label="Event Score"
+            android:screenOrientation="portrait"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+
+             <!-- <uses-feature android:name="android.hardware.camera.any" /> -->
+
+    <!-- <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:exported="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".Activity.SplashActivity_">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.HomeActivity_"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.TatooConsentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.RemovalConsentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.PearsingActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Utils.CropImage.CropImage"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.PearcingConsentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.TattooConsentDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.LaserRemovalConcentDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".Custom.LegacyCompatFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+    </application> -->
+    </application>
+
+</manifest>

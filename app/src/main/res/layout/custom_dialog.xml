@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTeamOne"
+        android:textSize="18sp"
+        android:text="Team 1"/>
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtTeamTwo"
+        android:textSize="18sp"
+        android:text="Team 2"/>
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIDOne"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Team 1"/>
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/txtIDTwo"
+        android:textSize="18sp"
+        android:text="Team 2"/>
+
+</LinearLayout>

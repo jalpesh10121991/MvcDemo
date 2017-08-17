@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg">
+
+    <include
+        layout="@layout/app_toolbar" android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="16dp">
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:id="@+id/txtPlayerInfo"
+            android:text="View Player Info"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:background="@drawable/rounded_corner_yellow_transparent"/>
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtPlayerInfo"
+            android:text="View Score"
+            android:id="@+id/txtViewScore"
+            android:layout_marginTop="24dp"
+            android:layout_height="85dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/rounded_corner_yellow_transparent"/>
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:id="@+id/txtEnterPlayer"
+            android:layout_below="@+id/txtViewScore"
+            android:text="Enter Player Info"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/rounded_corner_yellow_transparent"/>
+
+        <in.mvcdemo.Custom.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:id="@+id/txtLocateEvent"
+            android:layout_below="@+id/txtEnterPlayer"
+            android:text="Locate this event"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/rounded_corner_yellow_transparent"/>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar_edit_player" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="20dp">
+
+            <in.mvcdemo.Custom.CircleImageView
+                android:id="@+id/imgPlayer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_profile_user"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etlPlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgPlayer"
+                android:layout_marginTop="20dp">
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:id="@+id/edtPlayerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Player Name"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textColorHint="@color/appGray"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/white"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <in.mvcdemo.Custom.CustomTextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etlPlayerName"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Gender"
+                android:textColor="@color/colorAccent" />
+
+            <in.mvcdemo.Custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGender"
+                android:text="Male"
+                android:paddingLeft="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtMaleFemale"/>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etlTeamName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMaleFemale"
+                android:layout_marginTop="10dp">
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:id="@+id/edtTeamName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:enabled="false"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="16dp"
+                    android:hint="Team Name"
+                    android:inputType="text"
+                    android:textColorHint="@color/appGray"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etlCoachName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etlTeamName"
+                android:layout_marginTop="10dp">
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:id="@+id/edtCoachName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="16dp"
+                    android:hint="Coach Name"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textColorHint="@color/appGray"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etlShirtNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etlCoachName"
+                android:layout_marginTop="10dp">
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:id="@+id/edtShirtNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textColorHint="@color/appGray"
+                    android:hint="Shirt Number"
+                    android:textColor="@android:color/white"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:enabled="false"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etlOtherAttr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etlShirtNo"
+                android:layout_marginTop="10dp">
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:id="@+id/edtOtherArrt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Miscellaneous"
+                    android:textColor="@android:color/white"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:textColorHint="@color/appGray"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etlPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etlOtherAttr"
+                android:layout_marginTop="10dp">
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:id="@+id/edtPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:hint="Position"
+                    android:enabled="false"
+                    android:textColor="@android:color/white"
+                    android:inputType="text"
+                    android:textColorHint="@color/appGray"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

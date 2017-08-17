@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/atoz"
+        android:title="A to Z"
+        android:showAsAction="ifRoom|withText"
+        />
+
+    <item
+        android:id="@+id/teamname"
+        android:title="Team Name"
+        android:showAsAction="ifRoom|withText"
+        />
+
+    <item
+        android:id="@+id/coachname"
+        android:title="Coach Name"
+        android:showAsAction="ifRoom|withText"
+        />
+
+</menu>

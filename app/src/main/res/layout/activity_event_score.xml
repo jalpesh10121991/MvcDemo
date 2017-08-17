@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg">
+
+    <include layout="@layout/app_toolbar" android:id="@+id/toolbar"/>
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_event"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/txt_score"
+        android:layout_marginBottom="15dp"
+        android:layout_centerInParent="true"/>
+
+
+    <in.mvcdemo.Custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_score"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

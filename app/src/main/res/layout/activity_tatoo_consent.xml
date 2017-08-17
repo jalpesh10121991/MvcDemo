@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tatooConsent"
+        android:layout_below="@+id/toolbar"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scroll"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear1">
+
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt1"
+                        android:text="I "
+                        android:textSize="18sp"
+                        />
+
+                    <in.mvcdemo.Custom.CustomEditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt1"
+                        android:id="@+id/edtPrintName"
+                        android:hint="(print name)"
+                        android:textColorHint="@color/appGray"
+                        android:textSize="18sp"
+                        />
+
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edtPrintName"
+                        android:id="@+id/txt2"
+                        android:text=" give consent to "
+                        android:textSize="18sp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear1"
+                    android:id="@+id/linear2">
+
+
+                    <in.mvcdemo.Custom.CustomEditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtArtistName"
+                        android:hint="(artists name)"
+                        android:textColorHint="@color/appGray"
+                        android:textSize="18sp"/>
+
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt3"
+                        android:text=" to tattoo me. "
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear2"
+                    android:id="@+id/txt4"
+                    android:text="I am over 18 years of age and the information given is accurate to the best of my knowledge. "
+                    android:textSize="18sp"/>
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt4"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/txt5"
+                    android:textStyle="bold"
+                    android:text="Do you suffer from any of the following? "
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt5"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear3">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Any heart condition "
+                        android:layout_weight="1"
+                        android:textSize="18sp"/>
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear4"
+                    android:layout_below="@+id/linear3"
+                    android:layout_marginTop="5dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt4"
+                        android:layout_weight="1"
+                        android:text=" Seizures, ie. Epilepsy "
+                        android:textSize="18sp"/>
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear4"
+                    android:id="@+id/linear5"
+                    android:layout_marginTop="10dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Haemophilia  "
+                        android:layout_weight="1"
+                        android:textSize="18sp"/>
+
+                    <Switch
+                        android:id="@+id/switch3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear5"
+                    android:id="@+id/linear6"
+                    android:layout_marginTop="10dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" Comprimised immune system, ie. H.I.V. / Hepatitis  "
+                        android:textSize="18sp"/>
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear6"
+                    android:id="@+id/linear7"
+                    android:layout_marginTop="10dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" High blood pressure  "
+                        android:layout_weight="1"
+                        android:textSize="18sp"/>
+
+                    <Switch
+                        android:id="@+id/switch5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear7"
+                    android:id="@+id/linear8"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Diabetes  "
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:id="@+id/customTextView2" />
+
+                    <Switch
+                        android:id="@+id/switch6"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear8"
+                    android:id="@+id/linear9"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" Any skin condition, ie. Psoriasis / Eczema  "
+                        android:textSize="18sp"/>
+
+                    <Switch
+                        android:id="@+id/switch7"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear9"
+                    android:id="@+id/linear10"
+                    android:layout_marginTop="10dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" Any allergic reactions to adhesive plasters, creams, etc "
+                        android:textSize="18sp"
+                        android:id="@+id/customTextView3" />
+
+                    <Switch
+                        android:id="@+id/switch8"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear10"
+                    android:id="@+id/linear11"
+                    android:layout_marginTop="10dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" I am pregnant or a nursing mother "
+                        android:textSize="18sp"/>
+
+                    <Switch
+                        android:id="@+id/switch9"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear11"
+                    android:id="@+id/linear12"
+                    android:layout_marginTop="10dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" I am prone to fainting / dizziness  "
+                        android:textSize="18sp"
+                        android:id="@+id/customTextView" />
+
+                    <Switch
+                        android:id="@+id/switch10"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear12"
+                    android:id="@+id/linear13"
+                    android:layout_marginTop="10dp">
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle" />
+                    <in.mvcdemo.Custom.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" I am taking blood thinning medicines, ie. aspirin / warfarin "
+                        android:textSize="18sp"/>
+                    <Switch
+                        android:id="@+id/switch11"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textOn="Yes"
+                        android:textOff="No"/>
+                </LinearLayout>
+
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear13"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/txt6"
+                    android:text="I understand that a tattoo is permanent. No form of anaesthetic will be used in the procedure. "        android:textSize="18sp"/>
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt6"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt7"
+                    android:text="I also understand that the tattoo procedure will be performed professionally and in a hygienic way, including the use of sterilized single use needles. "
+                    android:textSize="18sp"/>
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt7"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt8"
+                    android:text="I understand that once I have left the studio the care of the tattoo is my responsibility and that I will follow the aftercare instructions as given to me to avoid any reactions such as blood poisoning, scarring, allergic reactions, localized swelling and trauma. "
+                    android:textSize="18sp"/>
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/txt9"
+                    android:textStyle="bold"
+                    android:text="I AM OVER 18 YEARS OF AGE"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/txt8"
+                    android:layout_centerHorizontal="true" />
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt9"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt10"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:text="I AM NOT UNDER THE INFLUENCE OF ALCOHOL OR DRUGS"
+                    android:textSize="18sp"/>
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt10"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt11"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:text="I HAVE REQUESTED THE TATTOO OF MY OWN FREE WILL"
+                    android:textSize="18sp"/>
+
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt11"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/edtName"
+                    android:hint="Full Name"
+                    android:padding="12dp"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/appGray"
+                    android:textSize="18sp"
+                    />
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtName"
+                    android:id="@+id/edtAddress"
+                    android:padding="12dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPostalAddress"
+                    android:hint="Address"
+                    android:textColorHint="@color/appGray"
+                    android:textSize="18sp"
+                    />
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtAddress"
+                    android:id="@+id/edtMob"
+                    android:padding="12dp"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:hint="Mobile"
+                    android:textColorHint="@color/appGray"
+                    android:textSize="18sp"
+                    />
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtMob"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/edtAge"
+                    android:padding="12dp"
+                    android:inputType="phone"
+                    android:hint="Age"
+                    android:textColorHint="@color/appGray"
+                    android:textSize="18sp"
+                    />
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtAge"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/edtdob"
+                    android:padding="12dp"
+                    android:inputType="date"
+                    android:hint="D.O.B"
+                    android:textColorHint="@color/appGray"
+                    android:textSize="18sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llImageLayout"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/edtdob">
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtID"
+                    android:text="ID"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/edtdob"
+                    android:gravity="top"
+                    android:padding="12dp"
+                    android:layout_weight="0.1"
+                    android:textColorHint="@color/appGray" />
+
+                    <ImageView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:id="@+id/btnCamera"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_photo_camera"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/llImageLayout"
+                    android:id="@+id/imgID"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_placeholder"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/btnsign"
+                    android:layout_marginTop="5dp"
+                    android:text="Signature"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/imgID" />
+
+
+                <com.webapptech.crutattoo.Custom.signature.views.SignaturePad
+                    android:id="@+id/signature_pad"
+                    android:layout_below="@+id/btnsign"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSave"
+                    android:layout_below="@+id/signature_pad"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:text="SAVE"/>
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:id="@+id/imgTemp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_below="@+id/btnsign"/>-->
+
+                <in.mvcdemo.Custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtdate"
+                    android:gravity="top"
+                    android:padding="12dp"
+                    android:layout_weight="0.7"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:textSize="18sp"
+                    android:hint="Date"
+                    android:textColorHint="@color/appGray"
+                    android:layout_below="@+id/txtSave" />
+
+                <in.mvcdemo.Custom.CustomEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtdisc"
+                    android:inputType="text"
+                    android:hint="Discription"
+                    android:padding="12dp"
+                    android:maxLines="3"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/appGray"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/txtdate" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/btnSubmit"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/edtdisc"
+                    android:background="@color/colorPrimary"
+                    android:text="SUBMIT"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

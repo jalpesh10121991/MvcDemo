@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=0C:4D:5B:78:E2:1A:14:D6:4A:13:63:5C:7F:CA:66:8C:11:E9:0C:1C%3Bin.teammate.Activity
+
+    You can also add your credentials to an existing key, using this line:
+    0C:4D:5B:78:E2:1A:14:D6:4A:13:63:5C:7F:CA:66:8C:11:E9:0C:1C;in.teammate.Activity
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyBYThAJsuu3pUIomH5jHISSdLKiWpEXeT8
+    </string>
+</resources>
